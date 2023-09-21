@@ -1,11 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 :root {
     --primary-accent: #d9d9d9;
     --secondaryaccent:#3164F4;
+    --neutral-dar-gray:  #808080;
 }
 
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-accent);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 1rem 0;
+    background-color: azure;
+}
+
+header  li {
+    margin-left: 1rem;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main__nav, .nav__list, .navigation, .nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item{
+    display: none;
+}
+
+.navbar__signup__btn {
+    background-color: var(--secondaryaccent);
+    color: #fff;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+}
+
+.navigation {
+    justify-content: space-between;
+}
+
+.current {
+    color: var(--secondaryaccent);
+}
+
+.burger div {
+    background-color: black;
+    display: block;
+    padding: 0.1rem 0;
+    margin: 0.2rem 0;
+    width: 35px;
+    border-radius: 9px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hero__text {
+    margin-bottom: 1rem;
+}
+
+.hero__text h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.hero__text p:nth-child(1) {
+    color: var(--neutral-dar-gray);
+}
+
+.hero__text div {
+    margin-top: 1rem;
+}
+
+.try__btn {
+    background-color: #3164F4;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+.how__it__works__btn{
+    padding: 0.4rem 0.8rem;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.companies {
+    margin-top: 3rem;
+}
+
+.companies__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.company__list__item {
+    flex: 0 0 150px;
+}
+
+.company__list__item ion-icon {
+    font-size: 4rem;
+}
+
+
+@media (min-width: 800px) {
+
+    .hero__text h1 {
+        font-size: 3rem;
+    }
+    .navbar__item {
+        display: block;
+    }
+    
+    .burger {
+        display: none;
+    }
 }
