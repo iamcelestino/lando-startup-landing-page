@@ -15,6 +15,7 @@
 body {
     background-color: var(--primary-accent);
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
 }
 
 header {
@@ -80,10 +81,10 @@ a {
     display: inline-block;
 }
 
-.hero {
-    text-align: center;
-    padding: 2rem 0;
+section {
+    padding: 1rem 0;
 }
+
 
 .hero__text {
     margin-bottom: 1rem;
@@ -91,7 +92,7 @@ a {
 
 .hero__text h1 {
     font-size: 2rem;
-    margin: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .hero__text p:nth-child(1) {
@@ -99,24 +100,39 @@ a {
 }
 
 .hero__text div {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 
-.try__btn {
+.try__free__btn, 
+.signup__btn {
+    text-align: center;
+    width: 100%;
     background-color: #3164F4;
-    color: #fff;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
+    color: white;
 }
 
-.how__it__works__btn{
-    padding: 0.4rem 0.8rem;
-    border: 1px solid;
+.try__now__btn, 
+.how__it__works__btn,
+.try__free__btn, 
+.signup__btn {
     border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    margin-top: 0.3rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
 }
+
+.try__now__btn, 
+.how__it__works__btn{
+    border:2px solid #808080;
+    color: black;
+}
+
 
 .companies {
-    margin-top: 3rem;
+    margin-top: rem;
+    text-align: center;
 }
 
 .companies__list {
@@ -134,17 +150,118 @@ a {
     font-size: 4rem;
 }
 
+.hero,
+.intro, 
+.join__container, 
+.smart__container, 
+.cost__container,
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.intro__description, 
+.hero__description,
+.costsaver__descrition {
+    order: 2;
+}
+
+.intro__description, 
+.hero__description,
+.start__description,
+.ilustration {
+    flex: 1;
+}
+
+.intro, .join__container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.security__img {
+    display: none;
+}
+
+
+.step {
+    padding: 1rem 0;
+}
+
+.step h1 {
+    margin-bottom: 0.3rem;
+}
+
+.step:nth-child(1),
+.step:nth-child(2) {
+    border-bottom: 2px solid;
+}
+
+
+.start {
+    background-color: #fff;
+    padding: 3rem 1.5rem;
+    border-radius: 20px ;
+}
+
+footer {
+    border-top: 2px solid gray;
+}
+
+@media (min-width: 600px) {
+    .intro, 
+    .join__container, 
+    .smart__container, 
+    .cost__container,
+    .start {
+        flex-direction: row;
+    }
+
+    .hero__text{
+        text-align: center;
+    }
+
+    .ilustration{
+        order: 2;
+    }
+
+    .step {
+        padding: 1rem 0;
+    }
+}
+
 
 @media (min-width: 800px) {
 
-    .hero__text h1 {
-        font-size: 3rem;
-    }
     .navbar__item {
         display: block;
     }
-    
     .burger {
         display: none;
     }
+
 }
+
+@media (min-width: 960px) {
+
+    .hero {
+        flex-direction: row;
+    }
+
+    .hero__text{
+        text-align: left;
+    }
+
+    .navbar__item {
+        display: block;
+    }
+    .burger {
+        display: none;
+    }
+
+}
+
+
