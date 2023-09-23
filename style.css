@@ -82,7 +82,7 @@ a {
 }
 
 section {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 
@@ -155,7 +155,8 @@ section {
 .join__container, 
 .smart__container, 
 .cost__container,
-.start {
+.start,
+.opinions  {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -200,6 +201,16 @@ section {
     border-bottom: 2px solid;
 }
 
+.testimonials {
+    text-align: center;
+}
+
+.opinions div{
+    background-color: #fff;
+    margin: 0.5rem;
+    border-radius: 10px;
+    padding: 2rem 0.5rem;
+}
 
 .start {
     background-color: #fff;
@@ -216,7 +227,8 @@ footer {
     .join__container, 
     .smart__container, 
     .cost__container,
-    .start {
+    .start, 
+    .opinions{
         flex-direction: row;
     }
 
