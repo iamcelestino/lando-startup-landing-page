@@ -26,10 +26,30 @@ header  li {
     margin-left: 1rem;
 }
 
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+section {
+    padding: 2.5rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 85%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -67,31 +87,20 @@ header  li {
 }
 
 
-img {
-    max-width: 100%;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-section {
-    padding: 2rem 0;
-}
-
-
-.hero__text {
-    margin-bottom: 1rem;
+.hero__text, 
+.intro__text,
+.costsaver__text{
+    margin: 1rem 0;
+    order: 2;
 }
 
 .hero__text h1 {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem
+}
+
+.hero__text p {
+    margin-bottom:0.8rem ;
 }
 
 .hero__text p:nth-child(1) {
@@ -100,6 +109,16 @@ section {
 
 .hero__text div {
     margin-top: 0.2rem;
+}
+
+.hero, 
+.intro, 
+.smart__container,
+.cost__container,
+.start {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .try__free__btn, 
@@ -131,158 +150,96 @@ section {
     color: black;
 }
 
-.companies {
-    text-align: center;
-}
-
 .companies__list {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
 }
-
-.company__list__item {
-    flex: 0 0 150px;
+.companies {
+    text-align: center;
 }
-
-.company__list__item ion-icon {
+.companies ion-icon {
     font-size: 4rem;
 }
 
-.hero,
-.intro, 
-.join__container, 
-.smart__container, 
-.cost__container,
-.start,
-.opinions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
-
-
-.description {
-    order: 2;
-}
-
-.intro__description, 
-.hero__description,
-.start__description,
-.ilustration {
-    flex: 1;
-}
-
-.intro, .join__container {
+.intro, .start {
     background-color: #fff;
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-.step {
-    padding: 1rem 0;
-}
-
-.step h1 {
-    margin-bottom: 0.3rem;
-}
-
-.step:nth-child(1),
-.step:nth-child(2) {
-    border-bottom: 2px solid;
-}
-
-.testimonials {
-    text-align: center;
-}
-
-.opinions div{
-    background-color: #fff;
-    margin: 0.5rem;
+    padding: 1.5rem;
     border-radius: 10px;
-    padding: 2rem 0.5rem;
 }
 
-.start {
-    background-color: #fff;
-    padding: 3rem 1.5rem;
-    border-radius: 20px ;
-}
-
-footer {
-    border-top: 2px solid gray;
-    padding: 2rem 0;
-}
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-
-
-@media (min-width: 600px) {
-    .intro, 
-    .join__container, 
-    .smart__container, 
-    .cost__container,
-    .start, 
-    .opinions{
-        flex-direction: row;
+@media (max-width: 660px) {
+    .try__now__btn, 
+    .how__it__works__btn,
+    .try__free__btn, 
+    .signup__btn {
+        width: 100%;
     }
+}
 
-    .description {
-        max-width: 40%;
-    }
+@media (min-width: 660px) {
 
-    .hero__text{
+    .hero__text {
         text-align: center;
     }
 
-    .ilustration{
+    .hero__text h1 {
+        font-size: 4rem;
+    }
+
+    .hero .ilustration {
         order: 2;
+    }
+
+    .intro, 
+    .start,
+    .smart__container,
+    .cost__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .smarttest__description,
+    .costsaver__text {
         max-width: 50%;
     }
 
-    .step {
-        padding: 1rem 0;
+    .intro .ilustration,
+    .start .ilustration, 
+    .cost__container .ilustration{
+        order: 2;
     }
-}
 
-@media (min-width: 800px) {
-
-    .navbar__item {
-        display: block;
-    }
-    .burger {
-        display: none;
+    .intro .ilustration,
+    .start .ilustration{
+       max-width: 45%;
     }
 
 }
 
-@media (min-width: 960px) {
+
+@media (min-width: 900px) {
 
     .hero {
         flex-direction: row;
+        justify-content: space-between;
     }
 
-    .hero__text{
+    .hero__text {
         text-align: left;
+        max-width: 46%;
     }
 
-    .navbar__item {
-        display: block;
+    .hero .ilustration {
+        max-width: 50%;
     }
 
-    .burger {
-        display: none;
+    .hero__text h1 {
+        font-size: 2.5rem;
     }
 
 }
+
+
 
 
