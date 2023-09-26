@@ -38,6 +38,7 @@ li {
 a {
     text-decoration: none;
     display: inline-block;
+    color: black;
 }
 
 section {
@@ -128,6 +129,12 @@ h3 {
     flex-direction: column;
 }
 
+.intro,
+.join__container {
+    box-shadow: 2px 8px 1px #cccccc;
+}
+
+
 .try__free__btn, 
 .signup__btn {
     text-align: center;
@@ -153,13 +160,14 @@ h3 {
 
 .try__now__btn, 
 .how__it__works__btn{
-    border:2px solid #808080;
+    border:2px solid;
     color: black;
 }
 
 .companies__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 .companies {
@@ -167,7 +175,7 @@ h3 {
 }
 
 .company__list__item {
-    flex: 1;
+    flex: 1 1 130px;
 }
 .companies ion-icon {
     font-size: 4rem;
@@ -186,7 +194,6 @@ h3 {
     padding: 2rem;
 }
 
-
 .testimonials {
     text-align: center;
 }
@@ -194,12 +201,9 @@ h3 {
     margin-top: 1rem;
 }
 
-
-
 .step + .step {
     border-top: 1px solid ;
 }
-
 
 .opinions div {
     padding: 2rem;
@@ -207,12 +211,15 @@ h3 {
 }
 
 footer {
-    border-top: 2px solid;
+    border-top: 1px solid #7d7d7d;
     padding: 2.5rem 0;
 }
 
+.footer__container div {
+    margin-top: 1rem;
+}
 
-@media (max-width: 660px) {
+@media (max-width: 610px) {
     .try__now__btn, 
     .how__it__works__btn,
     .try__free__btn, 
@@ -221,7 +228,8 @@ footer {
     }
 }
 
-@media (min-width: 660px) {
+
+@media (min-width: 610px) {
 
     .hero__text {
         text-align: center;
@@ -233,6 +241,10 @@ footer {
 
     .hero .ilustration {
         order: 2;
+    }
+
+    .company__list__item {
+        flex: 1 1 205px;
     }
 
     .intro, 
@@ -294,6 +306,18 @@ footer {
 
     .hero__text h1 {
         font-size: 2.5rem;
+    }
+
+    .navbar__item{
+        display: block;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .company__list__item {
+        flex: 1 1 100px;
     }
 
 }
