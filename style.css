@@ -197,6 +197,18 @@ h3 {
 .testimonials {
     text-align: center;
 }
+
+.opinion ion-icon {
+    font-size: 1.4rem;
+    color: #3164F4;
+}
+
+.opinions div {
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+
 .steps {
     margin-top: 1rem;
 }
@@ -205,13 +217,9 @@ h3 {
     border-top: 1px solid ;
 }
 
-.opinions div {
-    padding: 2rem;
-    margin-top: 1rem;
-}
 
 footer {
-    border-top: 1px solid #7d7d7d;
+    border-top: 1px solid #cfcdcd;
     padding: 2.5rem 0;
 }
 
@@ -219,12 +227,23 @@ footer {
     margin-top: 1rem;
 }
 
+
 @media (max-width: 610px) {
     .try__now__btn, 
     .how__it__works__btn,
     .try__free__btn, 
     .signup__btn {
         width: 100%;
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer__container div{
+        flex-basis: 250px;
     }
 }
 
@@ -285,6 +304,11 @@ footer {
        max-width: 45%;
     }
 
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
 
 
