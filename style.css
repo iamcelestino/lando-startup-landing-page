@@ -95,7 +95,7 @@ h3 {
 
 .hero__text, 
 .intro__text,
-.costsaver__text{
+.costsaver__text, .contact__description{
     margin: 1rem 0;
     order: 2;
 }
@@ -227,6 +227,36 @@ footer {
     margin-top: 1rem;
 }
 
+/* STYLING CONCTACT PAGE  */
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact__description {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea, .send__message__btn{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.send__message__btn {
+    margin-top: 1rem;
+    background-color: #3164F4;
+    color: #fff;
+}
+
 
 @media (max-width: 610px) {
     .try__now__btn, 
@@ -271,9 +301,13 @@ footer {
     .smart__container,
     .cost__container,
     .join__container,
-    .opinions{
+    .opinions, .contact__container{
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .contact__container {
+        align-items: center;
     }
 
     .smarttest__description,
@@ -281,7 +315,7 @@ footer {
         max-width: 50%;
     }
 
-    .join__description {
+    .join__description, form {
         max-width: 45%;
     }
 
@@ -300,7 +334,7 @@ footer {
     }
 
     .intro .ilustration,
-    .start .ilustration{
+    .start .ilustration, .contact__container .ilustration{
        max-width: 45%;
     }
 
@@ -308,6 +342,7 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+
     
 }
 
