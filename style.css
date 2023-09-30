@@ -241,7 +241,7 @@ footer {
 
 label {
     display: block;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 input, textarea, .send__message__btn{
@@ -256,6 +256,7 @@ input, textarea, .send__message__btn{
     background-color: #3164F4;
     color: #fff;
 }
+
 
 
 @media (max-width: 610px) {
@@ -331,7 +332,8 @@ input, textarea, .send__message__btn{
     .start .ilustration, 
     .cost__container .ilustration{
         order: 2;
-    }
+    } 
+
 
     .intro .ilustration,
     .start .ilustration, .contact__container .ilustration{
