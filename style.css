@@ -271,9 +271,6 @@ footer {
     border-radius: 50px;
 }
 
-
-
-
 /* STYLING CONCTACT PAGE  */
 
 .contact__container {
@@ -303,8 +300,6 @@ input, textarea, .send__message__btn{
     background-color: #3164F4;
     color: #fff;
 }
-
-
 
 @media (max-width: 610px) {
     .try__now__btn, 
@@ -411,7 +406,6 @@ input, textarea, .send__message__btn{
     }
  
 }
-
 
 @media (min-width: 900px) {
 
