@@ -227,6 +227,42 @@ footer {
     margin-top: 1rem;
 }
 
+/* STYLING PRICING PAGE  */
+.card {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.card__btn {
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card__btn:hover {
+    background-color: #3164F4;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pricing__tab ul {
+    display: flex;
+    justify-content: center;
+}
+
+.trigger + .trigger {
+    margin-left: 0.8rem;
+}
+
+.pricing__description, .faq h3 {
+    text-align: center;
+}
+
+
+
 
 /* STYLING ABOUT US PAGE  */
 .about__us div {
