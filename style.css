@@ -253,6 +253,7 @@ footer {
     justify-content: center;
 }
 
+
 .trigger + .trigger {
     margin-left: 0.8rem;
 }
@@ -260,6 +261,27 @@ footer {
 .pricing__description, .faq h3 {
     text-align: center;
 }
+
+.faq h3 {
+    margin-bottom: 1rem;
+}
+
+.questions li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.questions + .questions {
+    margin-top: 1.5rem;
+    border-top: 1px solid;
+}
+
+.answer {
+    display: none;
+}
+
 
 
 
