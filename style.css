@@ -228,6 +228,36 @@ footer {
 }
 
 /* STYLING PRICING PAGE  */
+
+.princing__tab > ul{
+    padding: 0;
+  }
+  
+.trigger{
+    list-style-type: none;
+    padding: 10px;
+    background: #f2f2f2;
+    margin: 4px;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+.tabs .trigger.active{
+    background: #ff6565;
+    color: white;
+}
+
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
+
+
 .card {
     background-color: #fff;
     padding: 2rem 1rem;
@@ -258,7 +288,9 @@ footer {
     margin-left: 0.8rem;
 }
 
-.pricing__description, .faq h3 {
+.pricing__description, 
+.faq h3,
+.faq .ilustration {
     text-align: center;
 }
 
@@ -281,9 +313,6 @@ footer {
 .answer {
     display: none;
 }
-
-
-
 
 
 /* STYLING ABOUT US PAGE  */
@@ -417,7 +446,7 @@ input, textarea, .send__message__btn{
     }
 
     .work__invitation h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: left;
         max-width: 30%;
     }
@@ -462,6 +491,18 @@ input, textarea, .send__message__btn{
         display: flex;
         justify-content: space-between;
     }
+
+    /* STYLING PRICING */
+
+    .tab__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content{
+        display: block;
+    }
+
  
 }
 
