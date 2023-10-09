@@ -49,10 +49,6 @@ p {
     margin: 0.5rem 0;
 }
 
-h3 {
-    padding-top: 1rem;
-    color: black;
-}
 
 .container {
     width: 90%;
@@ -194,6 +190,10 @@ h3 {
     padding: 2rem;
 }
 
+.join__container h3, .faq h3 {
+    margin-top: 1rem;
+}
+
 .testimonials {
     text-align: center;
 }
@@ -257,19 +257,27 @@ footer {
     display: block;
 }
 
-
 .card {
     background-color: #fff;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     margin: 1rem 0;
     border-radius: 10px;
 }
 
+.tab__cards span {
+    font-size: 2.8rem;
+}
+
+.card .card__btn {
+    margin-top: 1rem;
+}
+
 .card__btn {
-    border: 2px solid;
-    padding: 0.5rem 1rem;
+    border: 1px solid;
+    padding: 0.5rem;
     text-align: center;
     border-radius: 10px;
+    width: 100%;
 }
 
 .card__btn:hover {
@@ -283,15 +291,28 @@ footer {
     justify-content: center;
 }
 
-
 .trigger + .trigger {
     margin-left: 0.8rem;
+}
+
+.features ul {
+    margin-top: 1rem;
+}
+
+.features li {
+    margin-bottom: 0.6rem;
 }
 
 .pricing__description, 
 .faq h3,
 .faq .ilustration {
     text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid;
 }
 
 .faq h3 {
@@ -302,8 +323,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 1.5rem;
 }
-
 
 .questions + .questions {
     margin-top: 1.5rem;
@@ -339,7 +360,6 @@ footer {
 .team {
     text-align: center;
 }
-
 
 .people {
     display: grid;
@@ -392,7 +412,8 @@ input, textarea, .send__message__btn{
     .try__now__btn, 
     .how__it__works__btn,
     .try__free__btn, 
-    .signup__btn {
+    .signup__btn,
+    .card__btn {
         width: 100%;
     }
 
@@ -469,7 +490,6 @@ input, textarea, .send__message__btn{
         order: 2;
     } 
 
-
     .intro .ilustration,
     .start .ilustration,
     .contact__container .ilustration,
@@ -499,15 +519,46 @@ input, textarea, .send__message__btn{
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .card:nth-child(1) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card:nth-child(2) {
+        box-shadow: 0px 0px 4px inset var(--neutral-dar-gray);
+    }
+
+    .card:nth-child(3) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
     .content{
         display: block;
     }
 
- 
+    #pro a {
+        margin-top: 2rem;
+    }
+
+    #basic,
+    #business {
+        margin: 2rem 0;
+    }
+
+    .features__description {
+        display: flex;
+        justify-content: space-between;
+   }
+
+    .faq {
+        max-width: 60%;
+        margin: auto;
+    }
+
 }
 
 @media (min-width: 900px) {
-
+    
     .hero {
         flex-direction: row;
         justify-content: space-between;
