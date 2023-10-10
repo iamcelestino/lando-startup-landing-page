@@ -42,19 +42,42 @@ a {
 }
 
 section {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
 }
 
 p {
     margin: 0.5rem 0;
 }
 
-
 .container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
 }
+
+#flyoutMenu {
+    width: 100dvw;
+    height: 100dvw;
+    background-color: var(--neutral-dar-gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(100vw, 0, 0);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+}
+
+#flyoutMenu li {
+    color: #3164F4;
+    text-align: center;
+}
+
+#flyoutMenu li a:hover {
+   text-align: underline;
+}
+
+#flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+ }
 
 .main__nav, .nav__list, .navigation, .nav__btns {
     display: flex;
@@ -227,6 +250,10 @@ footer {
     margin-top: 1rem;
 }
 
+
+
+
+
 /* STYLING PRICING PAGE  */
 
 .princing__tab > ul{
@@ -326,6 +353,10 @@ footer {
     padding-top: 1.5rem;
 }
 
+.questions ion-icon {
+    font-size: 1.4rem;
+}
+
 .questions + .questions {
     margin-top: 1.5rem;
     border-top: 1px solid;
@@ -334,6 +365,8 @@ footer {
 .answer {
     display: none;
 }
+
+
 
 
 /* STYLING ABOUT US PAGE  */
@@ -378,6 +411,10 @@ footer {
     border-radius: 50px;
 }
 
+
+
+
+
 /* STYLING CONCTACT PAGE  */
 
 .contact__container {
@@ -408,6 +445,9 @@ input, textarea, .send__message__btn{
     color: #fff;
 }
 
+
+
+
 @media (max-width: 610px) {
     .try__now__btn, 
     .how__it__works__btn,
@@ -429,7 +469,7 @@ input, textarea, .send__message__btn{
 }
 
 
-@media (min-width: 610px) {
+@media (min-width: 475px) {
 
     .hero__text {
         text-align: center;
@@ -512,6 +552,8 @@ input, textarea, .send__message__btn{
         justify-content: space-between;
     }
 
+
+
     /* STYLING PRICING */
 
     .tab__cards {
@@ -556,6 +598,9 @@ input, textarea, .send__message__btn{
     }
 
 }
+
+
+
 
 @media (min-width: 900px) {
     
