@@ -64,15 +64,17 @@ p {
     left: 0;
     transform: translate3d(100vw, 0, 0);
     transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    padding: 0 2rem;
 }
 
 #flyoutMenu li {
     color: #3164F4;
     text-align: center;
+    margin: 1rem 0;
 }
 
-#flyoutMenu li a:hover {
-   text-align: underline;
+#flyoutMenu .navbar__signup__btn {
+    width: 100%;
 }
 
 #flyoutMenu.show {
@@ -108,7 +110,7 @@ p {
     display: block;
     padding: 0.1rem 0;
     margin: 0.2rem 0;
-    width: 35px;
+    width: 25px;
     border-radius: 9px;
 }
 
@@ -251,9 +253,6 @@ footer {
 }
 
 
-
-
-
 /* STYLING PRICING PAGE  */
 
 .princing__tab > ul{
@@ -367,8 +366,6 @@ footer {
 }
 
 
-
-
 /* STYLING ABOUT US PAGE  */
 .about__us div {
     text-align: center;
@@ -410,10 +407,6 @@ footer {
 .people img {
     border-radius: 50px;
 }
-
-
-
-
 
 /* STYLING CONCTACT PAGE  */
 
@@ -552,8 +545,6 @@ input, textarea, .send__message__btn{
         justify-content: space-between;
     }
 
-
-
     /* STYLING PRICING */
 
     .tab__cards {
@@ -598,8 +589,6 @@ input, textarea, .send__message__btn{
     }
 
 }
-
-
 
 
 @media (min-width: 900px) {
