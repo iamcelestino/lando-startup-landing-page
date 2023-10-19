@@ -21,6 +21,9 @@ body {
 
 header {
     padding: 1rem 0;
+    box-shadow: 1px 2px 4px 1px rgb(190, 190, 190);
+    position: fixed;
+    width: 100%;
 }
 
 header  li {
@@ -47,6 +50,10 @@ section {
 
 p {
     margin: 0.5rem 0;
+}
+
+main {
+    padding:5rem 0;
 }
 
 .container {
