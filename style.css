@@ -364,7 +364,12 @@ footer {
     font-size: 1.4rem;
 }
 
-.questions + .questions {
+.arrow-down {
+
+}
+
+
+.question + .question {
     margin-top: 1.5rem;
     border-top: 1px solid;
 }

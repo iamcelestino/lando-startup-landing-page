@@ -1,10 +1,10 @@
 const burger = document.querySelector(".burger");
 const menu = document.querySelector("#flyoutMenu");
-const questions = document.querySelector(".questions");
+const questions = document.querySelectorAll(".question");
+const downCircle = document.querySelectorAll("ion-icon");
 const tabs = document.querySelector(".pricing__tab");
 const buttons = document.querySelectorAll(".trigger");
-const contents = document.querySelectorAll(".content")
-
+const contents = document.querySelectorAll(".content");
 
 function showMenu() {
     menu.classList.add("show");
@@ -18,7 +18,7 @@ function hideMneu(event) {
 burger.addEventListener("click", showMenu);
 menu.addEventListener("click", hideMneu);
 
-tabs.addEventListener("click", event => {
+tabs.addEventListener("click", event => {;
     const id = event.target.dataset.id;
     if (id) {
         buttons.forEach(button => {
@@ -32,5 +32,12 @@ tabs.addEventListener("click", event => {
         element.classList.add("active");
     }
 });
+
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+        const answer = question.firstElementChild.nextElementSibling;
+        answer.classList.toggle("answer");
+    })
+})
 
 
