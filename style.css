@@ -16,7 +16,8 @@
 body {
     background-color: var(--primary-accent);
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.3;
+    line-height: 1.5;
+    word-spacing: 1.5;
 }
 
 header {
@@ -76,7 +77,7 @@ main {
 }
 
 #flyoutMenu li {
-    color: #3164F4;
+    font-weight: bold;
     text-align: center;
     margin: 1rem 0;
 }
@@ -337,6 +338,14 @@ footer {
     margin-bottom: 0.6rem;
 }
 
+.features__description li::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(img/checkmark-outline.svg);
+}
+
 .pricing__description, 
 .faq h3,
 .faq .ilustration {
@@ -363,11 +372,6 @@ footer {
 .questions ion-icon {
     font-size: 1.4rem;
 }
-
-.arrow-down {
-
-}
-
 
 .question + .question {
     margin-top: 1.5rem;
