@@ -58,7 +58,7 @@ p {
 
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 62em;
     margin: auto;
 }
 
@@ -456,7 +456,7 @@ input, textarea, .send__message__btn{
 
 
 
-@media (max-width: 610px) {
+@media (max-width: 38.125em) {
     .try__now__btn, 
     .how__it__works__btn,
     .try__free__btn, 
@@ -477,7 +477,7 @@ input, textarea, .send__message__btn{
 }
 
 
-@media (min-width: 610px) {
+@media (min-width: 38.125em) {
 
     .hero__text {
         text-align: center;
@@ -606,7 +606,7 @@ input, textarea, .send__message__btn{
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
     
     .hero {
         flex-direction: row;
